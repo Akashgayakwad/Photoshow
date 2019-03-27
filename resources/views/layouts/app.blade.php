@@ -9,7 +9,7 @@
     @include('inc.topbar')
     <br>
     <div class="row">
-      include('inc.messages')
+      @include('inc.messages')
       @yield('content')
     </div>
   </body>

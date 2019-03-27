@@ -6,5 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Album extends Model
 {
-    //
+    protected $fillable = array('name', 'desciption', 'cover_image');
+    public function photos(){
+      return $this->hasMany('App\Photo');
+    }
 }
