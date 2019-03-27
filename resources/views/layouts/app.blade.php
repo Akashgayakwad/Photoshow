@@ -4,6 +4,11 @@
     <meta charset="utf-8">
     <title>Photoshow</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/css/foundation.css">
+    <style media="screen">
+      #album_pic{
+        height: 30vw !important;
+      }
+    </style>
   </head>
   <body>
     @include('inc.topbar')
