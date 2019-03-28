@@ -15,7 +15,7 @@ class PhotosController extends Controller
 
       $this->validate($request, [
         'title' => 'required',
-        'photo' => 'image|max:9999'
+        'photo' => 'image|max:1999'
       ]);
       //get filename with extension
       $filenameWithExt = $request->file('photo')->getClientOriginalName();
@@ -38,5 +38,14 @@ class PhotosController extends Controller
       $photo->photo = $filenameToStore;
       $photo->save();
       return redirect('/albums/'.$request->input('album_id'))->with('success','Photo Uploaded');
+    }
+
+    public function show($id){
+      $photo = Photo::find($id);
+      return view('photos.show')->with('photo',$photo);
+    }
+
+    public function destroy($id){
+
     }
 }

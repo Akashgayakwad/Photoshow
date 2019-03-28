@@ -19,7 +19,7 @@ class AlbumsController extends Controller
     public function store(Request $request){
       $this->validate($request, [
         'name' => 'required',
-        'cover_image' => 'image|max:9999'
+        'cover_image' => 'image|max:1999'
       ]);
       //get filename with extension
       $filenameWithExt = $request->file('cover_image')->getClientOriginalName();
