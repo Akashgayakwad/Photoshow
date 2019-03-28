@@ -34,6 +34,6 @@
           <?php $i++; ?>
         @endforeach
   @else
-    <p>No Albums To Display</p>
+    <p class="text-center">No Albums To Display</p>
   @endif
 @endsection

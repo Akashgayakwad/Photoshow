@@ -5,8 +5,8 @@
     <title>Photoshow</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.5.3/css/foundation.css">
     <style media="screen">
-      #album_pic{
-        height: 30vw !important;
+      #album_pic, #photo{
+        height: 25vw !important;
       }
     </style>
   </head>
